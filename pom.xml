@@ -27,6 +27,23 @@
         </license>
     </licenses>
 
+    <distributionManagement>
+        <downloadUrl>https://github.com/arey/maven-config-github-cloudbee</downloadUrl>
+        <repository>
+            <id>repository-alizarion-release</id>
+            <name>repository-alizarion-release</name>
+            <url>dav:https://repository-alizarion.forge.cloudbees.com/release/</url>
+        </repository>
+        <snapshotRepository>
+            <id>repository-alizarion-snapshot</id>
+            <name>repository-alizarion-snapshot</name>
+            <url>dav:https://repository-alizarion.forge.cloudbees.com/snapshot/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+
+
     <repositories>
         <repository>
             <id>MavenCentral</id>
@@ -39,7 +56,30 @@
                 <enabled>false</enabled>
             </snapshots>
         </repository>
+        <repository>
+            <id>repository-alizarion-release</id>
+            <name>repository-alizarion-release</name>
+            <url>https://repository-alizarion.forge.cloudbees.com/release/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>repository-alizarion-snapshot</id>
+            <name>repository-alizarion-snapshot</name>
+            <url>https://repository-alizarion.forge.cloudbees.com/snapshot/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
     </repositories>
+
     <dependencies>
 
         <dependency>
@@ -62,7 +102,10 @@
             <version>2.10.1</version>
             <scope>provided</scope>
         </dependency>
+
+
     </dependencies>
+
 
     <build>
         <plugins>
@@ -103,8 +146,15 @@
             </plugin>
 
         </plugins>
-    </build>
 
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav</artifactId>
+                <version>1.0-beta-2</version>
+            </extension>
+        </extensions>
+    </build>
 
     <scm>
         <connection>scm:git:git://github.com/alizarion/mongodb-tomcat-realm.git</connection>
