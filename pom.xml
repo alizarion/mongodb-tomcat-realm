@@ -39,12 +39,13 @@
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-catalina</artifactId>
             <version>7.0.42</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>
             <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>3.8.1</version>
+            <artifactId>junit-dep</artifactId>
+            <version>4.10</version>
             <scope>test</scope>
         </dependency>
 
@@ -96,9 +97,11 @@
 
         </plugins>
     </build>
+
     <scm>
         <connection>scm:git:git@github.com:alizarion/git-demo.git</connection>
         <url>scm:git:git@github.com:alizarion/git-demo.git</url>
         <developerConnection>scm:git:git@github.com:alizarion/git-demo.git</developerConnection>
     </scm>
+
 </project>
