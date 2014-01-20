@@ -19,6 +19,14 @@
         </developer>
     </developers>
 
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>http://www.opensource.org/licenses/mit-license.php</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
     <repositories>
         <repository>
             <id>MavenCentral</id>
@@ -98,8 +106,8 @@
     </build>
 
     <scm>
-        <connection>scm:git:git@github.com:alizarion/mongodb-tomcat-realm.git</connection>
-        <url>scm:git:git@github.com:alizarion/mongodb-tomcat-realm.git</url>
+        <connection>https://github.com/alizarion/mongodb-tomcat-realm</connection>
+        <url>scm:git:git://github.com/alizarion/mongodb-tomcat-realm.git</url>
         <developerConnection>scm:git:git@github.com:alizarion/mongodb-tomcat-realm.git</developerConnection>
     </scm>
 
