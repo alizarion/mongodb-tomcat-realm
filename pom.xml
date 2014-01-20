@@ -3,7 +3,7 @@
 
     <groupId>com.alizarion.mongodb</groupId>
     <artifactId>mongodb-tomcat-realm</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
     <name>mongodb-tomcat-realm</name>
@@ -109,7 +109,7 @@
     <scm>
         <connection>scm:git:git://github.com/alizarion/mongodb-tomcat-realm.git</connection>
         <url>https://github.com/alizarion/mongodb-tomcat-realm</url>
-        <developerConnection>scm:git:git://github.com/alizarion/mongodb-tomcat-realm.git</developerConnection>
+        <developerConnection>scm:git:https://github.com/alizarion/mongodb-tomcat-realm.git</developerConnection>
     </scm>
 
 </project>
