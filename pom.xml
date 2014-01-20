@@ -98,9 +98,9 @@
     </build>
 
     <scm>
-        <connection>scm:git:git@github.com:alizarion/git-demo.git</connection>
-        <url>scm:git:git@github.com:alizarion/git-demo.git</url>
-        <developerConnection>scm:git:git@github.com:alizarion/git-demo.git</developerConnection>
+        <connection>scm:git:git@github.com:alizarion/mongodb-tomcat-realm.git</connection>
+        <url>scm:git:git@github.com:alizarion/mongodb-tomcat-realm.git</url>
+        <developerConnection>scm:git:git@github.com:alizarion/mongodb-tomcat-realm.git</developerConnection>
     </scm>
 
 </project>
